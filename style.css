@@ -1,0 +1,9 @@
+:root {
+  --color-primary: purple;
+  --color-secondary: yellow;
+}
+
+h1 {
+  color: var(--color-headings);
+  font-size: var(--heading-font-size);
+}
