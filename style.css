@@ -1,9 +1,126 @@
 :root {
   --color-primary: purple;
   --color-secondary: yellow;
+  --color-body: navy;
+  --color-header: black;
+  --color-sec-primary: silver;
 }
 
-h1 {
-  color: var(--color-headings);
-  font-size: var(--heading-font-size);
+.widget-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.nav {
+  background: var(--color-header);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 5px;
+  border-radius: var(--border-radius);
+  border-color: var(--border-color);
+}
+
+.nav_list {
+  width: 100%;
+  margin: 0;
+}
+
+.nav_item {
+  padding: 0.5rem 2rem;
+}
+
+.lebron_header {
+  font-size: 60px;
+  color: var(--color-primary);
+}
+
+.nav_item > a {
+  color: var(--color-primary);
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.nav_item > a:hover {
+  color: var(--color-secondary);
+}
+
+.header_image {
+  padding: 10px;
+  height: 110px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav_list {
+    width: auto;
+    display: flex;
+    font-size: 1.5rem;
+    max-height: 100%;
+    opacity: 1;
+  }
+}
+
+.hero_sec {
+  text-emphasis: none;
+}
+
+.page {
+  --padding-vertical: 6.5rem;
+  padding: var(--padding-vertical) 2.5rem;
+}
+
+.page-dark {
+  background-color: var(--color-sec-primary);
+}
+
+.hero {
+  text-emphasis: none;
+}
+
+.page-container {
+  text-emphasis: none;
+}
+
+.grid {
+  text-emphasis: none;
+}
+
+.grid-2-col {
+  text-emphasis: none;
+}
+
+.page_header {
+  text-align: center;
+}
+
+.hero_content {
+  text-emphasis: none;
+}
+
+.page_tagline {
+  font-size: 1.5rem;
+  color: red;
+  letter-spacing: 6px;
+  margin: 1.5rem 0 5.5rem;
+}
+
+.btn {
+  border-radius: 50px;
+  border: silver;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 650;
+  padding: 0.75rem 1rem;
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: var(--color-sec-primary);
+  color: navy;
+}
+
+.page_image {
+  width: 100%;
 }
